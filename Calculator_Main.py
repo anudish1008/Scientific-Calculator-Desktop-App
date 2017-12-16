@@ -4,7 +4,7 @@ from math import sin,cos,tan,log
 operators=['7','8','9','C','AC','sin','4','5','6','+','/','cos','1','2','3','-','*','tan','0','.','=','(',')','ln']
 evaluate=''
 
-def add(operator):
+def add(operator):                               ## add function to add digits and operator in string
 
     global evaluate,expression
 
@@ -43,7 +43,7 @@ def add(operator):
         expression.delete(0,END)
         expression.insert(0, evaluate)
 
-''' ---------------------------------------  MAIN CALCULATOR SCREEN LAYOUT -----------------------------------------'''
+''' ---------------------------------------------  Main Window   --------------------------------------------------------'''
 panel=Tk()
 panel.title('Py Calc')
 panel.wm_minsize(405,313)
@@ -57,7 +57,7 @@ expression.configure(bg='grey10',fg='white',font=('courier new','15'),borderwidt
 expression.place(x=80,y=8)
 
 
-'''----------------------------------------------- Button Bottom to Top --------------------------------------------'''
+'''----------------------------------------------- Buttons Top to Buttom --------------------------------------------'''
 k=0
 
 for y in range(1,5):
